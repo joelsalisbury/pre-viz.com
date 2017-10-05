@@ -1,0 +1,18 @@
+/**
+ * Base font family and size
+ */
+body {
+  font-size: 1.6rem;
+  font-family: $font-stack;
+}
+
+h2 {
+  font-size: 22px;
+  color: rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+.body-text {
+  font-size: 18px;
+  color: rgba(0,0,0,0.8);
+}

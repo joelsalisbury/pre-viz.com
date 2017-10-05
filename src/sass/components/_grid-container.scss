@@ -1,0 +1,14 @@
+.grid-container {
+  width: 90%;
+  margin: auto;
+  // background: rgba(0,0,0,0.2);
+
+  @include media(large) {
+    width: 80%;
+  }
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: auto;
+}

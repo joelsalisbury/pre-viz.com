@@ -1,0 +1,23 @@
+$primary-color: rgb(33, 33, 33);
+$accent-color: #65d0e2;
+
+/// Base Colors
+$white: rgba(255,255,255,1);
+$black: rgba(0,0,0,0.87);
+$grey: rgba(0,0,0,0.7);
+$mid-grey: rgba(0,0,0,0.3);
+$light-grey: rgba(0,0,0,0.12);
+
+/// Font Stack
+$font-stack: (
+  'Lato',
+  sans-serif,
+);
+
+/// Media Queries Breakpoints
+$breakpoints: (
+  'small': 320px,
+  'medium': 600px,
+  'large': 1200px,
+  'xlarge': 1600px
+);

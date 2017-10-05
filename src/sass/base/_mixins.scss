@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Helper to clear inner floats.
+/// @author Nicolas Gallagher
+/// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+/// Font smoothing helper.
+/// @author Eduardo de Freitas
+@mixin font-smooth {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/// Mobile-first media queries.
+/// @author Eduardo de Freitas
+/// @param {Lenght} $width
+@mixin media($width) {
+  @if map-has-key($breakpoints, $width) {
+      @media (min-width: #{map-get($breakpoints, $width)}) {
+        @content;
+      }
+    }
+  @else {
+    @warn "Please make sure to define the" + $width + "key in the `$breakpoints` map.";
+  }
+}
+
+/// Attach the following events to the element.
+@mixin on-event {
+  &:hover,
+  &:active,
+  &:focus {
+      @content;
+  }
+}
+
+/// Mixin helping defining both `width` and `height` simultaneously.
+/// If no $height is provided, the mixin assumes it's equal to the $width.
+/// @author Hugo Giraudel
+/// @access public
+/// @param {Length} $width
+/// @param {Length} $height
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}

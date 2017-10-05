@@ -1,0 +1,34 @@
+/**
+ * Html font-size is set to 62.5% so that all the REM measurements are based on 10px sizing.
+ * So basically 1.5rem = 15px :)
+ */
+html {
+	font-size: 62.5%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	box-sizing: border-box;
+	outline: none;
+}
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  transform: none;
+}

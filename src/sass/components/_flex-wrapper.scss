@@ -1,0 +1,23 @@
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @include media(large) {
+    flex-direction: row;
+  }
+}
+
+.flex-wrapper--center-align {
+  @include media(large) {
+    align-items: center;
+  }
+}
+
+.flex-wrapper--justify-between {
+  justify-content: space-between;
+}
+
+.flex-wrapper__child {
+  flex: 1;
+}

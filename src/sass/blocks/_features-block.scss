@@ -1,0 +1,38 @@
+.features .flex-wrapper:first-child {
+  @include media(large) {
+    margin-bottom: 80px;
+  }
+}
+
+.features__item {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @include media(large) {
+    width: 40%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.features__icon {
+  width: 32px;
+  height: 32px;
+  fill: $primary-color;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.features__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.8);
+}
+
+.features__description {
+  display: block;
+  margin-top: 5px;
+  color: rgba(0,0,0,0.54);
+}
