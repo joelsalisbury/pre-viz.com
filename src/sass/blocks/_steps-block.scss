@@ -1,8 +1,8 @@
 .steps-block {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+
 
   @include media(large) {
     flex-direction: row;
@@ -18,6 +18,10 @@
     margin-right: 20px;
     margin-bottom: 20px;
   }
+}
+
+.steps-block__list li {
+  padding:5px 0px;
 }
 
 .steps-block__number {
