@@ -1,7 +1,7 @@
 .steps-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 
 
   @include media(large) {
@@ -37,7 +37,6 @@
   font-size: 18px;
   font-weight: 300;
   color: #167BFF;
-  text-align: center;
 }
 
 .steps-block__title {
@@ -45,7 +44,6 @@
   margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
-  text-align: center;
   color: rgba(0,0,0,0.8);
 }
 
@@ -54,6 +52,5 @@
   line-height: 135%;
   margin: auto;
   margin-top: 6px;
-  text-align: center;
   color: rgba(0,0,0,0.8);
 }
